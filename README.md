@@ -30,7 +30,7 @@ Check to see if your function works properly by opening test.html in web browser
 
 ## Contribution
 
-Algorithms questions: Trilogy Education Services.
+Algorithms questions: Trilogy Education Services. </br>
 Solutions: Wenwen Tian
 
 ## Questions?
