@@ -3,15 +3,20 @@
 var characterCount = function (str) {
   // var str = "Hello World!";
   var count = {};
+
   for (var i = 0; i < str.length; i++) {
     //find letters
     var letter = str[i];
+
     // add numbers to object
-    if (letter in count) {
-      count[letter]++;
-    } else {
-      count[letter] = 1;
-    }
+    // if (letter in count) {
+    //   count[letter]++;
+    // } else {
+    //   count[letter] = 1;
+    // }
+
+    //refractor
+    letter in count ? count[letter]++ : (count[letter] = 1);
   }
   return count;
 };
