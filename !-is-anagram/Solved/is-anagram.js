@@ -22,28 +22,28 @@ var isAnagram = function (strA, strB) {
   }
 };
 
-var isAnagram = function (strA, strB) {
-  if (strA.length !== strB.length) {
-    return false;
-  }
+// var isAnagram = function (strA, strB) {
+//   if (strA.length !== strB.length) {
+//     return false;
+//   }
 
-  var aLetterMap = {};
-  var bLetterMap = {};
-  var strLength = strA.length;
+//   var aLetterMap = {};
+//   var bLetterMap = {};
+//   var strLength = strA.length;
 
-  for (var i = 0; i < strLength; i++) {
-    var aLetter = strA[i];
-    var bLetter = strB[i];
+//   for (var i = 0; i < strLength; i++) {
+//     var aLetter = strA[i];
+//     var bLetter = strB[i];
 
-    aLetterMap[aLetter] = (aLetterMap[aLetter] || 0) + 1;
-    bLetterMap[bLetter] = (bLetterMap[bLetter] || 0) + 1;
-  }
+//     aLetterMap[aLetter] = (aLetterMap[aLetter] || 0) + 1;
+//     bLetterMap[bLetter] = (bLetterMap[bLetter] || 0) + 1;
+//   }
 
-  for (var key in aLetterMap) {
-    if (aLetterMap[key] !== bLetterMap[key]) {
-      return false;
-    }
-  }
+//   for (var key in aLetterMap) {
+//     if (aLetterMap[key] !== bLetterMap[key]) {
+//       return false;
+//     }
+//   }
 
-  return true;
-};
+//   return true;
+// };
